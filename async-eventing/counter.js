@@ -13,6 +13,8 @@ setTimeout(fireAt3.plus.bind(fireAt3), 2000);
 setTimeout(fireAt3.plus.bind(fireAt3), 3000); // three seoncds later: "fired 3 times!"
 setTimeout(fireAt3.plus.bind(fireAt3), 1000);
 
+// solution:
+
 function Counter(limit, cb) {
   this.limit = limit;
   this.cb = cb;
