@@ -1,8 +1,8 @@
 /*
- *  Given a list of college courses as an array of strings,
+ *  Given a list of courses as an array of strings,
  *  Filter out all courses that have circular prerequisite dependencies.
  *
- *  Each string represents a college course to the left of the colon
+ *  Each string represents a course to the left of the colon
  *  and the prerequisites are separated by commas to the right of the colon.
  *
  *  e.g.
