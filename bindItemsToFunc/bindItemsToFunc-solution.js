@@ -7,7 +7,7 @@ var bindItemsToFunc = function(array, cb) {
   var result = [];
   
   for (var i = 0; i < array.length; i++) {
-    result.push(cb.bind(null, array[i]));
+    result.push(cb.bind(array[i]));
   }
 
   return result;
@@ -17,7 +17,7 @@ var bindItemsToFunc = function(array, cb) {
 
 var bindItemsToFunc = function(array, cb) {
   return array.map(function(item) {
-    return cb.bind(null, item);
+    return cb.bind(item);
   });
 }
 
